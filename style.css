@@ -820,6 +820,26 @@ section.pic .contact button:hover {
 .clients .box:hover{
     background: var(--bg-2);
 }
+.clients .box a{
+    position: relative;
+    color: #fff;
+    font-size: 20px;
+    font-family: var(--mon-font);
+    text-decoration: none;
+    margin-top: 50px;
+    display: inline-block;
+}
+.clients .box a:before{
+    position: absolute;
+    content: '';
+    border: 1px solid #fff;
+    border-radius: 50px;
+    width: 80px;
+    height: 80px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 .clients .box img{
     width: 120px;
     padding: 20px 0px;
