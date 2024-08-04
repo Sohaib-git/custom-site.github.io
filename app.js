@@ -285,3 +285,16 @@ function navHighlighter() {
     }
   });
 }
+
+
+// side bar
+
+
+$("img.bar_click").click(function(){
+  $(".left").css("left", "0px");
+  $(".img.bar_click").css("display", "none");
+});
+$("img.bar_close").click(function(){
+  $(".left").css("left", "-160px");
+  $(".img.bar_click").css("display", "block");
+});
