@@ -110,6 +110,7 @@ ul li{
     overflow: auto;
     width: 15.2%;
     position: fixed;
+    background: var(--bg);
 }
 
 
@@ -1335,3 +1336,52 @@ canvas {
         max-width: 1330px;
     }
 }
+
+@media screen and (max-width: 1600px){
+    .profile img {
+        width: 150px;
+    }
+    .header .link a {
+        font-size: 12px;
+    }
+    i.fi {
+        font-size: 13px;
+    }
+    .header .link li {
+        margin: 11% 0;
+    }
+    .social p {
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+    .social ul a {
+        width: 44px;
+        height: 44px;
+    }
+    .social ul a img {
+        width: 28px;
+    } 
+} 
+@media screen and (max-width: 1024px){
+    .profile img {
+        width: 120px;
+    }
+    .left {
+        width: 15.2%;
+        position: absolute;
+        z-index: 99;
+        left: -160px;
+    }
+    .left .bo{
+        height: 100vh;
+    }
+    .right {
+        width: 100%;
+    }
+} 
+@media screen and (max-width: 768px){
+
+}
+@media screen and (max-width: 480px){
+
+} 
