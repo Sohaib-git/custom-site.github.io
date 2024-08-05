@@ -259,6 +259,7 @@ mybutton.addEventListener("click", backToTop);
 
 function backToTop() {
   document.body.scrollTop = 0;
+  document.querySelector('.bo').scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
 
@@ -289,7 +290,6 @@ function navHighlighter() {
 
 // side bar
 
-
 $("img.bar_click").click(function(){
   $(".left").css("left", "0px");
   $(".img.bar_click").css("display", "none");
@@ -298,3 +298,8 @@ $("img.bar_close").click(function(){
   $(".left").css("left", "-160px");
   $(".img.bar_click").css("display", "block");
 });
+
+
+// Get Current Year
+
+document.querySelector('.yeaR').innerHTML = new Date().getFullYear();

@@ -113,6 +113,9 @@ ul li{
     width: 15.2%;
     position: fixed;
     background: var(--bg);
+    transition: .2s ease-in-out;
+    scroll-behavior: smooth;
+
 }
 
 
@@ -246,7 +249,7 @@ ul li{
 }
 .social ul{
     display: flex;
-    justify-content: space-around;
+    gap: 10px;
     margin-top: 10px;
 }
 .social ul a{
@@ -832,7 +835,7 @@ section.pic .contact button:hover {
     font-size: 20px;
     font-family: var(--mon-font);
     text-decoration: none;
-    margin-top: 50px;
+    margin: 50px 0;
     display: inline-block;
 }
 .clients .box a:before{
@@ -1194,7 +1197,7 @@ section.pricing{
 }
 .contact .box-on li{
     width: 18%;
-    padding: 4% 0%;
+    padding: 4% 0% 2%;
     margin-right: 7%;
     background: var(--bg-1);
     text-align: center;
@@ -1276,7 +1279,7 @@ footer .info img{
     border-radius: 50px;
     border: 4px solid #c4cfde40;
 }
-footer .info span{
+footer .info .dis span{
     color: var(--grey);
     font-family: var(--pop-font);
     text-transform: uppercase;
@@ -1380,6 +1383,15 @@ img.bar_close {
     }
     .social ul a img {
         width: 28px;
+    }
+    .resume .education .box:after {
+        width: 12px;
+        height: 12px;
+        top: 12%;
+        left: -44px;
+    }
+    #btn-back-to-top {
+        width: 42px;
     } 
 } 
 @media screen and (max-width: 1024px){
