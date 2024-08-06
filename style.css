@@ -446,7 +446,7 @@ section.pic .contact{
     text-align: center;
     margin: 25px 0px;
 }
-section.pic .contact button{
+section.pic .contact button, .portfolio button#loadMore{
     color: var(--sec);
     background:linear-gradient(145deg, #1e2024, #23272b);
     border: none;
@@ -460,7 +460,7 @@ section.pic .contact button{
     cursor: pointer;
     transition: .3s ease-in-out;
 }
-section.pic .contact button:hover {
+section.pic .contact button:hover, .portfolio button#loadMore:hover {
     transform: translate(0, -4px);
     background: var(--bg-2);
 }
@@ -521,6 +521,46 @@ section.pic .contact button:hover {
 }
 .col-sm{
     flex: 1;
+}
+
+
+/* -----Porfolio----- */
+.portfolio{
+    text-align: center;
+}
+.portfolio .dis {
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.portfolio .box.hidden{
+    display: none;
+}
+.portfolio button#loadMore{
+    margin-top: 20px;
+}
+.portfolio .box img {
+    border-radius: 5px 5px 0px 0px;
+    transition: .2s ease-in-out;
+    width: 100%;
+}
+.portfolio .box img:hover{
+    transform: scale(1.1);
+}
+.portfolio .box .image{
+    overflow: hidden;
+}
+.portfolio .box {
+    width: 31%;
+    background: transparent;
+    box-shadow: var(--shadow-1);
+    border-radius: 4px;
+}
+.portfolio .box h3{
+    margin: 10px 12px;
+    font-size: 18px;
+}
+.portfolio .content{
+    margin-bottom: 40px;    
 }
 
 /* ---Resume---- */
@@ -1432,6 +1472,9 @@ img.bar_close {
     .clients .mar .one {
         height: 520px;
     }
+    .portfolio .box h3 {
+        font-size: 14px;
+    }
 } 
 @media screen and (max-width: 767px){
     .contact .box-on h2{
@@ -1539,7 +1582,7 @@ img.bar_close {
     .top img{
         width: 240px;
     }
-    section.pic .contact button {
+    section.pic .contact button, .portfolio button#loadMore {
         padding: 9px 14px;
         font-size: 12px;
     }
@@ -1692,7 +1735,15 @@ img.bar_close {
     .contact .box-tw button {
         font-size: 14px;
     }
-    
-    
+    .portfolio .box{
+        width: 48%;
+        margin-bottom: 20px;
+    }
+    .search .background {
+        height: 40px;
+    }
+    .search .box span {
+        height: 19px;
+    }
 
 } 

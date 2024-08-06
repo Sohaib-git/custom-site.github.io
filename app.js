@@ -303,3 +303,65 @@ $("img.bar_close").click(function(){
 // Get Current Year
 
 document.querySelector('.yeaR').innerHTML = new Date().getFullYear();
+
+// Load More Button Javascript
+
+document.getElementById('loadMore').addEventListener('click', function() {
+
+  const hiddenItems = document.querySelectorAll('.portfolio .box.hidden');
+
+  if (window.matchMedia('(max-width: 480px)').matches) {
+
+    for (let i = 0; i < 2 && i < hiddenItems.length; i++) {
+      hiddenItems[i].classList.remove('hidden');
+    }
+    
+    // Hide the button if no more items to load
+    if (hiddenItems.length <= 2) {
+        this.style.display = 'none';
+    }
+
+  }else{{
+
+    for (let i = 0; i < 3 && i < hiddenItems.length; i++) {
+      hiddenItems[i].classList.remove('hidden');
+    }
+    
+    // Hide the button if no more items to load
+    if (hiddenItems.length <= 3) {
+        this.style.display = 'none';
+    }
+
+  }
+
+  }
+
+
+  
+  // Load 3 more items each click
+  
+});
+
+
+
+window.addEventListener('resize', function(){
+  if (window.matchMedia('(max-width: 480px)').matches) {
+    let element = document.querySelector('.repLacE');
+
+    if (element && element.classList.contains('repLacE')) {
+      element.classList.replace('repLacE', 'hidden');
+    };
+
+  };
+});
+
+if (window.matchMedia('(max-width: 480px)').matches) {
+  let element = document.querySelector('.repLacE');
+
+  if (element && element.classList.contains('repLacE')) {
+    element.classList.replace('repLacE', 'hidden');
+  };
+
+};
+
+
