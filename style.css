@@ -554,6 +554,7 @@ section.pic .contact button:hover, .portfolio button#loadMore:hover {
     background: transparent;
     box-shadow: var(--shadow-1);
     border-radius: 4px;
+    margin-bottom: 20px;
 }
 .portfolio .box h3{
     margin: 10px 12px;
