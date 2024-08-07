@@ -1169,28 +1169,13 @@ section.pricing{
 .contact .box-on:hover .img img{
     transform: scale(1.1);
 }
-.contact .box-on h2{
-    color: var(--light-hd);
-    font-family: var(--mon-font);
-    font-size: 29px;
-    font-weight: 800;
-    margin-top: 20px;
-    letter-spacing: 3px;
-
-}
-.contact .box-on h5{
-    color: var(--des);
-    font-family: var(--pop-font);
-    font-weight: 300;
-    font-size: 16px;
-    margin: 6% 0;
-}
 .contact .box-on h3{
     color: var(--des);
     line-height: 21px;
     font-size: 18px;
     font-weight: 500;
     font-family: var(--pop-font);
+    margin: 6% 0;
 }
 .contact .box-on .con{
     margin: 8% 0;
