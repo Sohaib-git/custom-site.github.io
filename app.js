@@ -52,7 +52,7 @@ function click() {
     if (i == 0) {
       i = 1;
       var elem = document.getElementById("Bar");
-      var span = document.querySelector(".percentage");
+      var span = document.querySelector(".html");
       var width = 0;
       var id = setInterval(frame, 10);
       function frame() {
@@ -76,7 +76,7 @@ function click() {
       var width = 0;
       var id = setInterval(frame, 10);
       function frame() {
-        if (width >= 55) {
+        if (width >= 70) {
           clearInterval(id);
           i = 0;
         } else {
@@ -96,7 +96,7 @@ function click() {
       var width = 0;
       var id = setInterval(frame, 10);
       function frame() {
-        if (width >= 50) {
+        if (width >= 65) {
           clearInterval(id);
           i = 0;
         } else {
@@ -116,7 +116,7 @@ function click() {
       var width = 0;
       var id = setInterval(frame, 10);
       function frame() {
-        if (width >= 60) {
+        if (width >= 80) {
           clearInterval(id);
           i = 0;
         } else {
@@ -136,7 +136,27 @@ function click() {
       var width = 0;
       var id = setInterval(frame, 10);
       function frame() {
-        if (width >= 75) {
+        if (width >= 90) {
+          clearInterval(id);
+          i = 0;
+        } else {
+          width++;
+          elem.style.width = width + "%";
+          span.innerHTML = width + "%";
+        }
+      }
+    }
+  }
+  function word_back() {
+    var i = 0;
+    if (i == 0) {
+      i = 1;
+      var elem = document.getElementById("Bar-word-B");
+      var span = document.querySelector(".back-word");
+      var width = 0;
+      var id = setInterval(frame, 10);
+      function frame() {
+        if (width >= 30) {
           clearInterval(id);
           i = 0;
         } else {
@@ -156,7 +176,7 @@ function click() {
       var width = 0;
       var id = setInterval(frame, 10);
       function frame() {
-        if (width >= 45) {
+        if (width >= 70) {
           clearInterval(id);
           i = 0;
         } else {
@@ -168,6 +188,7 @@ function click() {
     }
   }
   script();
+  word_back();
   word();
   boot();
   move();
